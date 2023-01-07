@@ -35,7 +35,7 @@ $(document).ready(function(){
         }
     })
 
-    const mainNavMenuBtn = $('.main-nav i')
+    const mainNavMenuBtn = $('.main-nav .fa-bars')
     const mainNavExitBtn = $('.pop-up-top .fa-x')
 
     mainNavMenuBtn.on('click', function(){
