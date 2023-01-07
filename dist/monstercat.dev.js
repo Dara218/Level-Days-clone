@@ -31,7 +31,7 @@ $(document).ready(function () {
       $('#programming-id').toggleClass('divShow');
     }
   });
-  var mainNavMenuBtn = $('.main-nav i');
+  var mainNavMenuBtn = $('.main-nav .fa-bars');
   var mainNavExitBtn = $('.pop-up-top .fa-x');
   mainNavMenuBtn.on('click', function () {
     popUpEl.addClass('pop-up-show-media');

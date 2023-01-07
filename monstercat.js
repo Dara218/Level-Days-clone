@@ -55,6 +55,21 @@ $(document).ready(function(){
             shareLink(currentShare)
     })
 
+    const shareBtnTop = $('.transparent-btn')
+
+    shareBtnTop.on('click', function(e){
+        console.log($(this).text());
+
+        if(navigator.share){
+            navigator.share({
+                title: 'Level Days - Monstercat',
+                url: 'https://www.monstercat.com/release/MCLP017'
+            }).then(function(){
+                console.log('Thanks for sharing!');
+            })
+        }
+    })
+
     function shareLink(currentShare){
         if(navigator.share){
 
